@@ -11,7 +11,7 @@
    <img src="https://img.shields.io/badge/Code-Repository-black?style=for-the-badge&logo=github" alt="Code">
  </a>
  &nbsp;&nbsp;&nbsp;
- <a href="https://github.com/justchugh/InvisibleFence.github.io">
+ <a href="https://justchugh.github.io/InvisibleFence.github.io/">
    <img src="https://img.shields.io/badge/Website-Project%20Page-red?style=for-the-badge&logo=github-pages" alt="Website">
  </a>
  &nbsp;&nbsp;&nbsp;
