@@ -7,11 +7,11 @@
 </h1>
 
 <p align="center">
- <a href="https://github.com/justchugh/InvisibleFence">
+ <a href="https://github.com/justchugh/animal_coexist">
    <img src="https://img.shields.io/badge/Code-Repository-black?style=for-the-badge&logo=github" alt="Code">
  </a>
  &nbsp;&nbsp;&nbsp;
- <a href="https://justchugh.github.io/InvisibleFence/">
+ <a href="https://github.com/justchugh/InvisibleFence.github.io">
    <img src="https://img.shields.io/badge/Website-Project%20Page-red?style=for-the-badge&logo=github-pages" alt="Website">
  </a>
  &nbsp;&nbsp;&nbsp;
@@ -149,12 +149,6 @@ Deer, fox, raccoon, rabbit, birds, squirrel, and other common garden intruders
 ---
 
 ## Demo
-
-<p align="center">
-  <a href="https://youtu.be/6DLVsTkO47E">
-    <img src="figures/demo_thumbnail.png" alt="Demo Video" width="60%">
-  </a>
-</p>
 
 Watch our live demonstration: [https://youtu.be/6DLVsTkO47E](https://youtu.be/6DLVsTkO47E)
 
