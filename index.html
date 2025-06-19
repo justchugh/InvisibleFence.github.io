@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2QJ24VBZG"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-W2QJ24VBZG');
+        </script>
+
+        <title>InvisibleFence: Non-Lethal Edge-Optimized AI for Human Wildlife Coexistence</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+        
+        <!-- Link to external stylesheet -->
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- Link to jQuery and external scripts -->
+        <script type='text/javascript' src='./assets/jquery-3.7.0.min.js?ver=3.7.0' id='jquery-core-js'></script>
+        <script type="text/javascript" src="scripts.js"></script>
+    </head>
+
+    <body class="w3-white" style="padding:0; margins:0;">
+        <a class="anchor top" id="home"></a>
+        <div class="w3-top">
+            <div class="w3-bar">
+                <div class="topnav">
+                    <a href="#home" style="float:left;text-decoration:none;font-weight:bold;font-size:28px">InvisibleFence</a>
+                    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                        <i class="fas fa-stream"></i>
+                    </a>
+                    <div id="navLinks" class="topnav-links">
+                        <a href="#team" onclick="closeMenu()">Team</a>
+                        <a href="#paper" onclick="closeMenu()">Paper</a>
+                        <a href="#demo" onclick="closeMenu()">Demo</a>
+                        <a href="#dataset" onclick="closeMenu()">Dataset</a>
+                        <a href="#system" onclick="closeMenu()">System</a>
+                        <a href="#motivation" onclick="closeMenu()">Motivation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="anchor top" id="video"></a>
+        <div class="video-container" id="container">
+            <video id="video" 
+                   muted 
+                   autoplay 
+                   loop 
+                   playsinline 
+                   preload="auto" 
+                   style="opacity: 1;"
+                   defaultMuted>
+                <source src="assets/wildlife_detection.mp4#t=0.1" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div class="caption">
+                <div class="w3-row w3-content" style="max-width:1000px; padding-left:5%; padding-right:5%; padding-top:50px">
+                    <div class="w3-row w3-text-white">
+                        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                            <tr style="padding:0px">
+                                <td style="padding-top:30%;padding-bottom:30%;vertical-align:middle">
+                                    <div class="w3-center">
+                                        <h1 style="margin-bottom: 20px;">InvisibleFence</h1>
+                                        <h4 style="font-size: calc(16px + 0.5vw); margin-bottom: 30px;">Non-Lethal Edge-Optimized AI for Human Wildlife Coexistence and Crop Protection</h4>
+                                        <h5 style="font-size: calc(14px + 0.3vw); margin-bottom: 40px; opacity: 0.9;">ACM MobiSys 2025 Demo</h5>
+                                        <div class="w3-center" style="padding-top:26px;">
+                                            <a class="button button-black button-large" href="#paper">Paper</a>
+                                            <a class="button button-black button-large" href="https://github.com/justchugh/InvisibleFence">Code</a>
+                                            <a class="button button-black button-large" href="https://youtu.be/6DLVsTkO47E">Demo Video</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="anchor top" id="abstract"></a>
+        <div class="w3-content" style="max-width:1200px;">
+            <div class="w3-row-padding">
+                <div class="w3-center">
+                    <h2>Overview</h2>
+                </div>
+                <p>Human-wildlife conflicts in residential and agricultural settings often rely on ineffective or ecologically harmful deterrents (e.g., rodenticides, fences, lethal traps), forcing gardeners and small-scale farmers to abandon crops, causing ecosystem damage, and plagued by high false-positive rates and habituation. InvisibleFence addresses these challenges via an edge-optimized framework for accurate wildlife detection and targeted, non-lethal deterrence.</p>
+                
+
+                <div class="w3-center" style="margin: 50px 0;">
+                    <img src="figures/pods.png" alt="InvisibleFence Vision Pod and Sound Pod" style="width: 100%; max-width: 900px; display: block; margin: 0 auto;">
+                    <p style="margin-top: 20px; color: #666; font-style: italic;">InvisibleFence modular hardware: Vision Pod (left) with 2K IR camera and 240° motion sensing, Sound Pod (right) with 6-speaker ultrasonic array</p>
+                </div>
+
+                
+                <div class="w3-row" style="margin-top: 40px;">
+                    <div class="w3-third w3-center" style="padding: 20px;">
+                        <i class="fas fa-microchip" style="font-size: 48px; color: #2196F3; margin-bottom: 15px;"></i>
+                        <h4>Edge Intelligence</h4>
+                        <p>2K video processed in &lt;0.8s on embedded hardware</p>
+                    </div>
+                    <div class="w3-third w3-center" style="padding: 20px;">
+                        <i class="fas fa-paw" style="font-size: 48px; background: linear-gradient(45deg, #FF0000, #ff9100); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 15px;"></i>
+                        <h4>Species-Specific Response</h4>
+                        <p>Modular deterrents activate only for target wildlife, sparing pets</p>
+                    </div>
+                    <div class="w3-third w3-center" style="padding: 20px;">
+                        <i class="fas fa-bolt" style="font-size: 48px; color: #4CAF50; margin-bottom: 15px;"></i>
+                        <h4>Power Efficiency</h4>
+                        <p>Continuous 24/7 operation under 5W, fully cloud-free</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <a class="anchor top" id="motivation"></a>
+        <div class="w3-light-gray">
+            <div class="w3-content" style="max-width:1200px;">
+                <div class="w3-row-padding">
+                    <div class="w3-center">
+                        <h2>Motivation</h2>
+                    </div>
+                    
+                    <!-- Current Ineffective Solutions -->
+                    <div class="w3-center" style="margin: 40px 0;">
+                        <h4 style="margin-bottom: 30px;">Current Ineffective Solutions</h4>
+                        <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 40px;">
+                            <img src="figures/deer_prohibition.png" alt="Fences fail to stop wildlife" style="width: 100%; max-width: 350px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                            <img src="figures/deterrent_devices.png" alt="Generic deterrents lack effectiveness" style="width: 100%; max-width: 350px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        </div>
+                        <p style="margin-top: 20px; color: #666; font-style: italic;">Traditional fences and generic ultrasonic deterrents fail to prevent wildlife intrusion effectively</p>
+                    </div>
+                    
+                    <div class="w3-row">
+                        <div class="w3-half" style="padding-right: 20px;">
+                            <h4>The Problem</h4>
+                            <ul class="blue-dot-list">
+                                <li>Gardeners abandon crops due to wildlife damage</li>
+                                <li>Traditional deterrents harm ecosystems</li>
+                                <li>Motion sensors have high false-positive rates</li>
+                                <li>Animals habituate to generic deterrents</li>
+                            </ul>
+                        </div>
+                        <div class="w3-half" style="padding-left: 20px;">
+                            <h4>Our Solution</h4>
+                            <ul class="blue-dot-list">
+                                <li>AI-powered species identification</li>
+                                <li>Targeted, non-lethal deterrence</li>
+                                <li>Edge computing for privacy & efficiency</li>
+                                <li>Adaptive response to prevent habituation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="anchor top" id="system"></a>
+        <div class="w3-content" style="max-width:1200px;">
+            <div class="w3-row-padding">
+                <div class="w3-center">
+                    <h2 style="padding-bottom:20px;">System Design</h2>
+                    <h4>A modular framework combining edge AI detection with adaptive deterrence</h4>
+                    <img style="width:100%; max-width:900px; margin: 40px auto; display: block;" alt="System Architecture" src="figures/system_architecture.png">
+                </div>
+                
+                <div class="w3-row" style="margin-top: 40px;">
+                    <div class="w3-half" style="padding: 20px;">
+                        <h3>Vision Pod</h3>
+                        <p class="highlight-text">
+                            <span class="arrow">→</span> <strong>3D-printed enclosure</strong> with weatherproof design<br>
+                            <span class="arrow">→</span> <strong>2560×1440 IR camera</strong> with 174° fisheye lens<br>
+                            <span class="arrow">→</span> <strong>240° tri-PIR array</strong> for motion detection<br>
+                            <span class="arrow">→</span> <strong>Raspberry Pi 5</strong> running YOLOv8-Nano NCNN<br>
+                            <span class="arrow">→</span> <strong>Sub-5W power</strong> consumption
+                        </p>
+                    </div>
+                    <div class="w3-half" style="padding: 20px;">
+                        <h3>Deterrent Modules</h3>
+                        <p class="highlight-text">
+                            <span class="arrow">→</span> <strong>Sound Pod</strong>: 6-speaker ultrasonic array<br>
+                            <span class="arrow">→</span> <strong>Light Module</strong>: Programmable LED strobes<br>
+                            <span class="arrow">→</span> <strong>Spray System</strong>: Water/scent deterrents<br>
+                            <span class="arrow">→</span> <strong>MQTT Control</strong>: Real-time activation<br>
+                            <span class="arrow">→</span> <strong>Human Safety</strong>: Auto-suppression when humans detected
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="anchor top" id="dataset"></a>
+        <div class="w3-light-gray">
+            <div class="w3-row-padding w3-content" style="max-width:1200px;">
+                <div class="w3-center" style="margin-bottom: 40px;">
+                    <h2>Dataset</h2>
+                    <h4 style="margin-top: 20px; margin-bottom: 30px;">
+                        44,000 real-world images spanning 11 wildlife species classes
+                    </h4>
+                </div>
+
+                <div class="w3-center" style="margin: 40px 0;">
+                    <img src="figures/wildlife_grid.png" alt="Sample wildlife images from dataset" style="width: 100%; max-width: 800px; display: block; margin: 0 auto; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                </div>
+
+                <div style="margin-bottom: 30px;">
+                    <p style="margin-bottom: 25px;">
+                        Our comprehensive dataset captures diverse wildlife in various conditions, collected from actual farms and backyards for real-world relevance.
+                    </p>
+                
+
+                    <div class="w3-row" style="display: flex; justify-content: center; flex-wrap: wrap; max-width: 900px; margin: 40px auto;">
+                        <div class="w3-center" style="padding: 20px; flex: 1; min-width: 250px;">
+                            <i class="fas fa-images" style="font-size: 40px; color: #2196F3; margin-bottom: 15px; display: block;"></i>
+                            <h3 style="margin: 0; font-size: 20px; line-height: 1.4;">
+                                <span style="color: #2196F3; font-size: 32px; font-weight: bold; display: block;">44,000</span>
+                                <span style="color: #666; font-weight: normal;">Real-World Images</span>
+                            </h3>
+                        </div>
+                        <div class="w3-center" style="padding: 20px; flex: 1; min-width: 250px;">
+                            <i class="fas fa-paw" style="font-size: 40px; background: linear-gradient(45deg, #FF0000, #ff9100); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 15px; display: block;"></i>
+                            <h3 style="margin: 0; font-size: 20px; line-height: 1.4;">
+                                <span style="background: linear-gradient(45deg, #FF0000, #ff9100); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-size: 32px; font-weight: bold; display: block;">11</span>
+                                <span style="color: #666; font-weight: normal;">Wildlife Species</span>
+                            </h3>
+                        </div>
+                        <div class="w3-center" style="padding: 20px; flex: 1; min-width: 250px;">
+                            <i class="fas fa-sun" style="font-size: 40px; color: #4CAF50; margin-bottom: 15px; display: block;"></i>
+                            <h3 style="margin: 0; font-size: 20px; line-height: 1.4;">
+                                <span style="color: #4CAF50; font-size: 32px; font-weight: bold; display: block;">24/7</span>
+                                <span style="color: #666; font-weight: normal;">Day/Night Coverage</span>
+                            </h3>
+                        </div>
+                    </div>
+                    
+
+                    <ul class="blue-dot-list">
+                        <li><strong>Species Coverage</strong>: Deer, fox, raccoon, rabbit, birds, squirrel, and other common garden intruders</li>
+                        <li><strong>Condition Variety</strong>: Day/night captures with IR and standard illumination across all seasons</li>
+                        <li><strong>Field-Collected Data</strong>: Images sourced from actual deployment sites</li>
+                    </ul>
+                </div>
+
+                
+                
+
+                <div class="w3-center" style="margin-bottom: 20px;">
+                    <a class="button button2" style="margin: 10px;" href="mailto:schugh1@umbc.edu?subject=InvisibleFence%20Dataset%20Access">
+                        <h5 style="margin: 10px;">Request Dataset Access</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <a class="anchor top" id="results"></a>
+        <div class="w3-content" style="max-width:1200px;">
+            <div class="w3-row-padding">
+                <div class="w3-center">
+                    <h2>Results</h2>
+                    <h4>State-of-the-art performance with minimal computational footprint</h4>
+                </div>
+                
+                <div class="w3-responsive" style="margin-top: 40px;">
+                    <table class="w3-table w3-bordered w3-striped w3-hoverable">
+                        <thead>
+                            <tr class="w3-light-grey">
+                                <th>Model</th>
+                                <th>Precision</th>
+                                <th>Recall</th>
+                                <th>F1</th>
+                                <th>mAP</th>
+                                <th>Size (MB)</th>
+                                <th>Time (s)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>YOLOv7-416</td>
+                                <td>0.855</td>
+                                <td>0.802</td>
+                                <td>0.82</td>
+                                <td>0.84</td>
+                                <td>12.3</td>
+                                <td>692.38</td>
+                            </tr>
+                            <tr>
+                                <td>YOLOv7-640</td>
+                                <td>0.856</td>
+                                <td>0.811</td>
+                                <td>0.83</td>
+                                <td>0.855</td>
+                                <td>12.3</td>
+                                <td>699.52</td>
+                            </tr>
+                            <tr style="background-color: #E3F2FD;">
+                                <td><strong>YOLOv8-N NCNN (Ours)</strong></td>
+                                <td><strong>0.868</strong></td>
+                                <td><strong>0.811</strong></td>
+                                <td><strong>0.83</strong></td>
+                                <td><strong>0.867</strong></td>
+                                <td><strong>11.7</strong></td>
+                                <td><strong>157.09</strong></td>
+                            </tr>
+                            <tr>
+                                <td>YOLOv11-S</td>
+                                <td>0.889</td>
+                                <td>0.804</td>
+                                <td>0.87</td>
+                                <td>0.893</td>
+                                <td>19.2</td>
+                                <td>1884.12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="w3-center" style="margin-top: 50px;">
+                    <h4>Species Classification Performance</h4>
+                    <img src="figures/confusion_matrix.jpg" alt="Confusion Matrix showing classification accuracy" style="width: 100%; max-width: 700px; display: block; margin: 20px auto; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                    <p style="margin-top: 15px; color: #666; font-style: italic;">Confusion matrix demonstrating high accuracy across 11 wildlife species with minimal false positives</p>
+                </div>
+
+                <div class="method-highlight" style="margin-top: 40px;">
+                    <p><strong>Key Performance Metrics:</strong></p>
+                    <p class="highlight-text">
+                        <span class="arrow">→</span> <strong>86.7% mAP</strong> with only 11.7 MB model size<br>
+                        <span class="arrow">→</span> <strong>5x faster</strong> inference than YOLOv11<br>
+                        <span class="arrow">→</span> <strong>Sub-second</strong> processing on Raspberry Pi 5<br>
+                        <span class="arrow">→</span> <strong>Species-specific accuracy:</strong> Deer (0.87), Raccoon (0.95), Rabbit (0.90)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <a class="anchor top" id="demo"></a>
+        <div class="w3-light-gray">
+            <div class="w3-content" style="max-width:1200px;">
+                <div class="w3-row-padding">
+                    <div class="w3-center">
+                        <h2 style="padding-bottom:20px;">Live Demo</h2>
+                        <h4>See InvisibleFence in action</h4>
+                        
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin-top: 40px;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                                    src="https://www.youtube.com/embed/6DLVsTkO47E" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                        
+                        <p style="margin-top: 40px;">
+                            The Vision Pod distinguishes animals from humans in its 240° view. When an animal appears, 
+                            it triggers deterrent devices via MQTT. Detection stops if a human enters the frame, 
+                            ensuring safety. A live dashboard displays detection confidence and distance to target.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="anchor top" id="paper"></a>
+        <div class="w3-content" style="max-width:1200px;">
+            <div class="w3-row-padding">
+                <div class="w3-center">
+                    <h2>Publications</h2>
+                </div>
+                
+                <div style="margin-top: 40px;">
+                    <h4>Demo Paper</h4>
+                    <h5>Snehalraj Chugh, Milind Rampure, Elijah Polyakov, Bipendra Basnyat, and Nirmalya Roy. 
+                    <i>Demo: InvisibleFence: Non-Lethal Edge-Optimized AI for Human Wildlife Coexistence and Crop Protection.</i> 
+                    In ACM MobiSys '25, June 23-27, 2025, Anaheim, CA, USA.</h5>
+                    
+                    <div class="w3-center" style="margin-top: 20px;">
+                        <a class="button button2" href="assets/InvisibleFence_Demo.pdf"><h5>Demo Paper PDF</h5></a>
+                        <a class="button button2" href="assets/InvisibleFence_Poster.pdf"><h5>Poster PDF</h5></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="anchor top" id="bibtex"></a>
+        <div class="w3-light-gray">
+            <div class="w3-content" style="max-width:1200px;">
+                <div class="w3-row-padding">
+                    <div class="w3-center">
+                        <h2>Citation</h2>
+                    </div>
+                    <div class="bibtex-container">
+                        <pre class="bibtex-code">@inproceedings{invisiblefence2025,
+  author = {Snehalraj Chugh and Milind Rampure and Elijah Polyakov and Bipendra Basnyat and Nirmalya Roy},
+  title = {Demo: InvisibleFence: Non-Lethal Edge-Optimized AI for Human Wildlife Coexistence and Crop Protection},
+  booktitle = {The 23rd Annual International Conference on Mobile Systems, Applications and Services (MobiSys '25)},
+  year = {2025},
+  month = {June},
+  days = {23-27},
+  location = {Anaheim, CA, USA},
+  publisher = {ACM},
+  doi = {10.1145/3711875.3734379}
+}</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="anchor top" id="team"></a>
+        <div class="w3-content" style="max-width:1200px;">
+            <div class="w3-row-padding">
+                <div class="w3-center" style="padding-bottom:30px;">
+                    <h2 style="padding-bottom:20px;">Team</h2>
+                    <div>
+                        <div class="author">
+                            <a href="https://justchugh.github.io">
+                                <div class="authorphoto">
+                                    <img src="assets/authors/Snehalraj.png" alt="Snehalraj Chugh" />
+                                </div>
+                                <div>Snehalraj Chugh</div>
+                            </a>
+                        </div>
+                        <div class="author">
+                            <a href="https://www.linkedin.com/in/milind-rampure/">
+                                <div class="authorphoto">
+                                    <img src="assets/authors/Milind.png" alt="Milind Rampure" />
+                                </div>
+                                <div>Milind Rampure</div>
+                            </a>
+                        </div>
+                        <div class="author">
+                            <a href="https://www.linkedin.com/in/elijah-polyakov/">
+                                <div class="authorphoto">
+                                    <img src="assets/authors/Elijah.png" alt="Elijah Polyakov" />
+                                </div>
+                                <div>Elijah Polyakov</div>
+                            </a>
+                        </div>
+                        <div class="author">
+                            <a href="https://www.linkedin.com/in/bipendra-basnyat/">
+                                <div class="authorphoto">
+                                    <img src="assets/authors/Bipendra.png" alt="Bipendra Basnyat" />
+                                </div>
+                                <div>Bipendra Basnyat</div>
+                            </a>
+                        </div>
+                        <div class="author">
+                            <a href="https://mpsc.umbc.edu/nroy">
+                                <div class="authorphoto">
+                                    <img src="assets/authors/Nirmalya.png" alt="Nirmalya Roy" />
+                                </div>
+                                <div>Nirmalya Roy</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <a class="anchor top" id="footer"></a>
+            <div class="w3-center">
+                <p class="w3-center" style="color:#666;">Copyright © 2025. All rights reserved.</p>
+                <p style="color:#666; margin-bottom: 20px;">
+                    Supported by NSF CAREER Award #1750936, NSF CNS EAGER Grant #2233879, 
+                    NSF REU Site Grant #2050999, NSF I-Corps Grant #2502886, UMBC FEAT and TCF Grants.
+                </p>
+                <p><img alt="" src="https://styleguide.umbc.edu/wp-content/uploads/sites/113/2019/01/UMBC-primary-logo-RGB.png" style="display: block; margin-left: auto; margin-right: auto; width:200px;"></p>
+            </div>
+        </div>
+    </body>
+</html>
